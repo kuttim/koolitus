@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.header-section {
+    background-image: url("../assets/hills.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-slogan {
+    font-size: 33px;
+    font-weight: 800;
+    color: #0B0B0B;
+    width: 126px;
+    word-wrap: normal;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 72px 0;
+}
