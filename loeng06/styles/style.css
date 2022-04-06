@@ -8,9 +8,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    position: relative;
+    height: 700px;
 }
 
 .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
@@ -29,4 +38,34 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 37px 72px 0;
+}
+
+
+
+.header-circle {
+    position: absolute;
+    right: 0;
+    top: 350px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    background-color: grey;
+    background-image: url("../assets/person.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    position: relative;
+    top: 200px;
+    font-weight: bold;
+    padding-left: 200px;
+}
+
+.upcoming-treks-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
 }
