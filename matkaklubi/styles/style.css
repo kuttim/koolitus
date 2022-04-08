@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
@@ -137,4 +137,87 @@ body {
     position: absolute;
     top: 15px;
     left: -40px;
+}
+
+.treks-section {
+   position: relative;
+   top: -100px;
+}
+.treks-section > h2 {
+    color: grey;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 8%;
+}
+
+.treks-section > h1 {
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 8%;
+}
+
+.treks-section > p {
+    color: #3D3D3D;
+    font-weight: 400;
+    position: relative;
+    font-size: 20.83px;
+    left: 8%;
+}
+
+.treks-row {
+    display: flex;
+    margin-left: 80px;
+    flex-direction: row;
+    
+}
+
+.person-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-gallery {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-gallery > img {
+  width: 309px;
+  height: 406px;
+  padding: 34px;
+  object-fit: cover;
+}
+
+.arrows {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6%;
+    padding-top: 25%;
+}
+
+.arrows > .first {
+    padding-top: 5%;
+    font-weight: 400;
+    font-size: 33.33px;
+    color: #000000;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.arrows > .second {
+    padding-top: 5%;
+    font-weight: 400;
+    font-size: 33.33px;
+    color: #9A9A9A;
+    margin-top: 10px;
+}
+.bi-arrow-left {
+    font-size: 64px;
+}
+
+.bi-arrow-right {
+    padding-left: 6%;
+    font-size: 64px;
+    color: #9A9A9A;
 }
