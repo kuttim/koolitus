@@ -257,3 +257,26 @@
     font-weight: 400;
     color: #9A9A9A;
 }
+
+.banner {
+    background-image: url("../assets/banner.png");
+    width: 100%;
+    height: 351px;
+    background-size: cover;
+}
+
+.banner > h1 {
+    margin-left: 35%;
+    padding-top: 4%;
+    font-size: 45.83px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.banner > p {
+    font-size: 20.83px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 27%;
+}
