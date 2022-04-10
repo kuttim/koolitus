@@ -140,37 +140,57 @@
 }
 
 .treks-section {
-   position: relative;
-   top: -100px;
-}
-.treks-section > h2 {
-    color: grey;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-left: 8%;
-}
-
-.treks-section > h1 {
-    text-transform: capitalize;
-    color: #000000;
-    font-weight: 600;
-    padding-left: 8%;
-}
-
-.treks-section > p {
-    color: #3D3D3D;
-    font-weight: 400;
-    position: relative;
-    font-size: 20.83px;
-    padding-top: 5%;
-    left: 8%;
-}
-
-.treks-row {
     display: flex;
     margin-left: 80px;
     flex-direction: row;
+    height: 650px;
+}
+
+.treks-section .treks-description h2 {
+    color: grey;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.treks-section .treks-description h1 {
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+}
+
+.treks-section .treks-description p {
+    color: #3D3D3D;
+    font-weight: 400;
+    position: relative;
+    padding-top: 5%;
     
+}
+
+.treks-section-left {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.treks-section-top-left {
+    flex-grow: 1;
+}
+.treks-section-bottom-left {
+    flex-grow: 0;
+    padding-bottom: 150px;
+}
+
+.treks-section-left .treks-description {
+    top: -150px;
+    position: relative;
+}
+
+.treks-section-right {
+    position: relative;
+}
+.treks-section-right .inner-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
 }
 
 .person-list {
@@ -180,45 +200,60 @@
 
 .img-gallery {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 175px;
 }
 
 .img-gallery > img {
-  width: 309px;
-  height: 406px;
-  padding: 34px;
-  object-fit: cover;
+
+     width: 309px; 
+     height: 406px; 
+    margin: 34px;
+    object-fit: cover;
 }
 
-.arrows {
+.paginator-arrows {
     display: flex;
     justify-content: flex-start;
-    margin-left: 6%;
-    padding-top: 25%;
+    align-items: center;
+    margin-left: 6px;
+    padding-top: 25px;
 }
 
-.arrows > .first {
-    padding-top: 5%;
+
+.current {
     font-weight: 400;
     font-size: 33.33px;
     color: #000000;
-    padding-left: 30px;
-    margin-top: 10px;
+    padding-left: 15px;
 }
 
-.arrows > .second {
-    padding-top: 5%;
+.total {
+    font-weight: 400;
+    font-size: 20.83px;
+    color: grey;
+    padding-left: 10px;
+}
+
+
+
+.paginator-arrows > .total {
+    padding-top: 10px;
     font-weight: 400;
     font-size: 33.33px;
     color: #9A9A9A;
-    margin-top: 10px;
+    margin-top: 5px;
 }
+
 .bi-arrow-left {
     font-size: 64px;
+    padding-bottom: 10px;
 }
 
 .bi-arrow-right {
-    padding-left: 6%;
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-size: 64px;
+    font-weight: 400;
     color: #9A9A9A;
 }
