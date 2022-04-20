@@ -1,5 +1,4 @@
 const todosListElement = document.getElementById('todos-list');
-const todosTitleElement = document.getElementById('todo-title');
 const emptyListElement = document.getElementById('empty-list');
 const inputElement = document.getElementById('todo-input');
 
