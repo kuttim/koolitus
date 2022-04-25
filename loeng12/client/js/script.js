@@ -26,6 +26,7 @@ const clickedEquals = async () => {
   console.log('equals!!', numbers);
   const response = await fetch('http://localhost:3000/api/add', {
     method: 'POST',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
     },
