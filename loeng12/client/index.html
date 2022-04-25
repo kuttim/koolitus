@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="input" class="input">0</div>
+        <div class="keyboard">
+            <div class="row">
+                <div onclick="clickedNumber(7)">7</div>
+                <div onclick="clickedNumber(8)">8</div>
+                <div onclick="clickedNumber(9)">9</div>
+                <div onclick="clickedOperator('/')">/</div>
+            </div>
+            <div class="row">
+                <div onclick="clickedNumber(4)">4</div>
+                <div onclick="clickedNumber(5)">5</div>
+                <div onclick="clickedNumber(6)">6</div>
+                <div onclick="clickedOperator('x')">x</div>
+            </div>
+            <div class="row">
+                <div onclick="clickedNumber(1)">1</div>
+                <div onclick="clickedNumber(2)">2</div>
+                <div onclick="clickedNumber(3)">3</div>
+                <div onclick="clickedOperator('-')">-</div>
+            </div>
+            <div class="row">
+                <div onclick="clickedNumber(0)">0</div>
+                <div onclick="clearInput()">c</div>
+                <div onclick="clickedEquals()">=</div>
+                <div onclick="clickedOperator('+')">+</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
