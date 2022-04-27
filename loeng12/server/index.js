@@ -6,21 +6,15 @@ const port = 3000;
 
 app.use(express.json());
 
-/**
- * Enable cors
- */
+app.use(cors());
 
-app.use(
-  cors({
-    origin: '*',
-  })
-);
 app.post('/api/add', (req, res) => {
-  console.log('minu pihta toimub päring', req.body);
-  res.header({
-    'Content-Type': 'application/json',
-  });
-  res.json({ answer: 0 });
+  console.log(req.body);
+
+  const answer = req.body.reduce((acc, curr) => {
+    return acc + parseInt(curr);
+  }, 0);
+  res.send({ answer });
 });
 
 app.listen(port, () => {
