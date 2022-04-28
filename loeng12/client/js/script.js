@@ -34,9 +34,9 @@ const clickedEquals = async () => {
     },
     body: JSON.stringify(savedNumbers),
   });
-  const answer = await response.json();
+  const { answer } = await response.json();
   console.log('vastus:', answer);
-  input.innerHTML = [answer.answer];
+  inputField.innerHTML = answer;
 };
 
 const clearInput = () => {
